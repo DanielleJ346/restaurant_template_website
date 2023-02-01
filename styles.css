@@ -1,0 +1,365 @@
+:root {
+    --main-grey: #808283;
+    --main-grey-dark: #1f2833;
+    --main-black: #0b0c10;
+    --main-white: white;
+    --main-red: #e94a5a;
+    --main-blue: #729ea1;
+}
+
+* {
+    font-family: 'Caveat Brush', cursive;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    background-color: var(--main-black);
+}
+
+/*nav-bar section*/
+  
+header {
+    width: 100%;
+    height: 100px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: rgba(0, 0, 0, 75%);
+    position: fixed;
+    }
+
+/*links*/
+
+ul {
+    display: flex;
+    list-style-type: none;
+    
+  }
+
+  ul li a {
+    padding: 0 20px;
+    display: inline-block;
+    font-size: 40px;
+  }
+
+  li a::after {
+    content: '';
+    display: block;
+    height: 4px;
+    width: 0;
+    transition: all .5s;
+    background-color: white;
+  }
+
+  a {
+    text-decoration: none;
+    color: white;
+  }
+
+  li a:hover::after {
+ width: 100%;
+  }
+  /*end-link*/
+
+ .hero-section {
+    background-image: url(./images/food.JPG);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+   flex-direction: column;
+   justify-content: center;
+   align-items: center;
+   width: 100%;
+   height: 125vh;
+ } 
+
+ .titles {
+    font-size: 4rem;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+    color: var(--main-white);
+    background-color: rgba(0, 0, 0, 75%);
+    border-radius: 15px;
+    padding: 0px 40px 40px;
+    text-shadow: 2px 2px var(--main-black);
+    margin: 100px;
+    width: 500px;
+}
+
+.hero-btn {
+    color: white;
+    background-color: black;
+    width: 200px;
+    height: 100px;
+    font-size: 2rem;
+    margin-top: 40px;
+    border-radius: 15px;
+}
+
+.hero-btn:hover {
+    background-color: rgba(0, 0, 0, 75%);
+    border: none;
+}
+
+.times {
+    display: flex;
+    justify-content: flex-start;
+    color: var(--main-white);
+    background-color: var(--main-black);
+    width: 200px;
+    padding: 10px;
+    border-radius: 15px;
+    margin: 0px 0px 0px 40px;
+}
+
+.hero-times {
+   text-align: center; 
+   font-size: 1.5rem;
+}
+/*end hero-section*/
+
+/*menu*/
+.menu {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-color: var(--main-black);
+}
+
+h2 {
+    font-size: 3rem;
+    color: var(--main-white);
+    margin: 40px;
+    text-align: center;
+}
+
+.tabs {
+    background-color: var(--main-red);
+    color: var(--main-white);
+    display: flex;
+    width: 75%;
+    height: 50px;
+    justify-content: space-around;
+    align-items: center;
+    font-size: 1.2rem;
+}
+
+.tabs:hover {
+    background-color: var(--main-black);
+}
+
+.menu-item {
+    background-color: var(--main-white);
+    width: 75%;
+    padding: 30px;
+    font-size: 30px;
+}
+
+#Pasta {
+    display: none;
+}
+
+#Starter {
+    display: none;
+}
+
+p {
+    display: flex;
+    justify-content: space-between;
+}
+
+.descrip {
+    color: var(--main-grey);
+}
+
+/*About section*/
+.chef {
+    width: 100px;
+    height: 200px;
+}
+
+.hundred {
+   width: 100%;
+   height: auto;
+   margin-top: 40px;
+}
+
+.restaurant {
+margin-bottom: 40px;
+}
+
+.about {
+   background-color: var(--main-red); 
+   color: var(--main-white);
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   flex-direction: column;
+   margin-top: 40px;
+   padding-top: 40px;
+}
+
+.about-info {
+    width: 75%;
+    padding: 30px;
+    font-size: 30px;
+    border-radius: 15px;
+}
+
+.hours > p{
+    border-bottom: 3px solid var(--main-white);
+}
+/*end-about-section*/
+
+/*contact-section*/
+.contact {
+    background-color: var(--main-blue);
+    font-size: 30px;
+}
+
+#contact {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    }
+    
+    
+    #contact > p {
+        font-size: 25px;
+        width: 60%;
+        margin-bottom: 20px;
+    }
+    
+    form {
+        width: 60%;
+        padding: 30px;
+        margin-top: 6px;
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        border: 3px solid var(--main-white);
+    border-radius: 15px;
+     margin-bottom: 40px;
+    }
+    
+    input, textarea {
+        margin-top: 10px;
+        padding: 10px;
+        border: none;
+        font-size: 25px;
+    }
+    
+    .submit {
+       width: 150px; 
+       font-size: 20px;
+       border-radius: 5px;
+       border: none;
+       background-color: var(--main-grey-dark);
+       color: var(--main-white);
+      
+    }
+    
+    .submit:hover {
+        background-color: var(--main-grey);
+        cursor: pointer;
+    }
+    /*contact*/
+
+    /*footer*/
+    .socials p {
+        font-size: 30px;
+    }
+    
+    .socials i {
+        font-size: 20px;
+        letter-spacing: 10px;
+    }
+    
+    .socials {
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+        text-align: center;
+        color: var(--main-white);
+        width: 100%;
+        height: 100px;
+        background-color: rgba(0, 0, 0, 75%);
+    }
+    
+    .socials i:hover {
+      color: var(--main-grey);
+      cursor: pointer;
+    }
+    /*end-footer*/
+
+    @media screen and (max-width: 800px) {
+        body {
+            width: 100%;
+        }
+
+        h1 {
+            font-size: 50px;
+        }
+
+        .hero-btn {
+            width: 100px;
+            font-size: 1rem;
+            height: 50px;
+        }
+
+        .hero-section {
+            background-image: url(./images/food.JPG);
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+            width: 100%;
+           height: 130vh; 
+        }
+
+        header {
+            height: 50px;
+        }
+
+        .titles {
+            font-size: 50px;
+        }
+
+        ul li a {
+            font-size: 20px;
+        }
+
+        .pizza-menu {
+            width: 90%;
+            font-size: 1.5rem;
+        }
+
+        .about-info {
+            font-size: 1.5rem;
+            width: 90%;
+        }
+
+        #contact > p{
+            width: 85%;
+            font-size: 1.2rem;
+        }
+
+         .contact {
+            font-size: 1.2rem;
+        }
+
+        form {
+            width: 100%;
+            border: none;
+        }
+    }
